@@ -12,7 +12,7 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   
-  if(digitalRead(button)==1)  //ktra trạng thái nút nhấn
+  if(digitalRead(button)==0)  //ktra trạng thái nút nhấn
   {
     digitalWrite(leds,1);  
   }

@@ -1,0 +1,6 @@
+https://www.youtube.com/watchv=89F4dMzJ6ck&list=PLhFjtzzUovr9eRbtphykZQnfxGybJQ2M8&index=2
+
+link:
+http://dan.drown.org/stm32duino/package_STM32duino_index.json
+
+https://raw.githubusercontent.com/stm32duino/BoardManagerFiles/master/STM32/package_stm_index.json
