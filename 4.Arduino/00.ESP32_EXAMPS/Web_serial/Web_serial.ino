@@ -23,11 +23,14 @@ void recvMsg(uint8_t *data, size_t len){
   WebSerial.println("Received Data...");
   String d = "";
   for(int i=0; i < len; i++){
+    Serial.print((char)data[i]);
     d += char(data[i]);
   }
   WebSerial.println(d);
+  Serial.println("");
   if (d == "ON"){
     digitalWrite(LED, HIGH);
+    
   }
   if (d=="OFF"){
     digitalWrite(LED, LOW);
@@ -52,6 +55,6 @@ void setup() {
 }
 
 void loop() {
-  WebSerial.println("Hello! Linh dau buoi!");
+  WebSerial.println("Hello! Linh dau buoi!");  //copy id../webserial
   delay(2000);
 }
