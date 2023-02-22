@@ -1,0 +1,38 @@
+
+
+
+```
+#include <WiFi.h>
+// trong đó #include là lệnh nhập nội dung bên ngoài vào chương trình
+
+// Khai báo các biến
+const char* ssid = "Buu Bien";
+const char* password = "12345678";
+
+// Thiết lập kết nối WiFi
+void setup() {
+  Serial.begin(115200);
+  delay(10);
+
+  // Khởi tạo kết nối WiFi
+  Serial.println();
+  Serial.print("Trying to connect");
+  WiFi.begin(ssid, password);
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  // Báo kết nối thành công
+  Serial.println("");
+  Serial.println("WiFi connected");
+  Serial.println("IP address :");
+  Serial.println(WiFi.localIP());
+}
+
+// Vòng lặp chương trình
+void loop() {
+
+}
+```

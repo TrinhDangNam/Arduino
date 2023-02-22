@@ -1,0 +1,5 @@
+Để gửi dữ liệu từ chế độ master đến chế độ slave, bạn cần gửi một địa chỉ của chế độ slave và dữ liệu muốn gửi đến chế độ slave. Khi chế độ slave nhận được dữ liệu, nó sẽ xử lý và trả lời cho chế độ master.
+
+Tương tự, để nhận dữ liệu từ chế độ slave, chế độ master sẽ gửi một yêu cầu đến chế độ slave và chờ đợi trả lời từ chế độ slave.
+
+Việc giao tiếp với nhiều chế độ slave qua I2C yêu cầu sự kiểm soát chặt chẽ về thời gian và tín hiệu giao tiếp, nhưng nó cung cấp một cách linh hoạt và tiết kiệm về chi phí cho việc giao tiếp giữa các thiết bị.
